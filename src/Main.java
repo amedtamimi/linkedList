@@ -52,6 +52,19 @@ class LinkedList{
         return false;
     }
 
+    public Node findS(int key){
+        Node curr = first;
+        while (curr.data !=key){
+            if(curr.next ==null){
+                return null;
+            }
+            else{
+                curr = curr.next;
+            }
+        }
+        return curr;
+    }
+
     public void displayList()
     {
         System.out.print("List (first-->last): ");
