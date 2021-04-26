@@ -64,6 +64,26 @@ class LinkedList{
         }
         return curr;
     }
+    public Node delete(int key){
+        Node curr = first;
+        Node prev = first;
+        while (curr.data !=key){
+            if(curr.next ==null){
+                return null;
+            }
+            else{
+                prev = curr;
+                curr = curr.next;
+            }
+        }
+            if(curr ==first){
+                first = first.next;
+            }
+            else{
+                prev.next =curr.next;
+            }
+            return curr;
+    }
 
     public void displayList()
     {
