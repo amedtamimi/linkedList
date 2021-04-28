@@ -6,6 +6,8 @@ public class Main {
         list.insertFirst(4);
         list.insertFirst(6);
         list.insertFirst(8);
+        list.insertFirst(185);
+        list.insertFirst(707);
         System.out.println(list.find(10));
         System.out.println(list.find(2));
         list.displayList();
